@@ -18,3 +18,5 @@ http://localhost:3000/api/seed
 ```
 
 7. Levantar ```yarn start:dev```
+
+8. Listo
