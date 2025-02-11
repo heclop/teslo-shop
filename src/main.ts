@@ -31,6 +31,9 @@ async function bootstrap() {
   const documentFactory = () => SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, documentFactory);
 
+  console.log('Variables cargadas en Railway:', process.env);
+
+
   await app.listen(process.env.PORT);
  
 }
