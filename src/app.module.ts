@@ -25,7 +25,7 @@ import { AuthModule } from './auth/auth.module';
       // database: process.env.CUSTOM_DB_NAME,
       // username: process.env.CUSTOM_DB_USER,
       // password: process.env.CUSTOM_DB_PASS,
-      url: 'postgresql://postgres:dkVpRACIXFdiMgXQOAAqPuSwyIwxWlqu@autorack.proxy.rlwy.net:40638/railway',
+      url: process.env.DATABASE_URL,
       autoLoadEntities: true,
       synchronize: true,
 
