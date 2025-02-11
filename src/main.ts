@@ -7,7 +7,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const logger = new Logger('TesloShop');
   logger.log(`App running on port ${process.env.PORT}`)
-  logger.log(`App running on DB_HOSTT ${process.env.DB_HOSTT}`)
+  logger.log(`App running on DB_HOST ${process.env.DB_HOST}`)
   logger.log(`App running on DB_NAMEE ${process.env.DB_NAMEE}`)
   logger.log(`App running on DB_USERNAMEE ${process.env.DB_USERNAMEE}`)
   logger.log(`App running on DB_PORTT ${process.env.DB_PORTT}`)

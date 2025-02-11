@@ -20,7 +20,7 @@ import { AuthModule } from './auth/auth.module';
           : null,
       },
       type: 'postgres',
-      host: process.env.DB_HOSTT,
+      host: process.env.DB_HOST,
       port: +process.env.DB_PORTT,
       database: process.env.DB_NAMEE,
       username: process.env.DB_USERNAMEE,
