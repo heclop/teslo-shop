@@ -7,11 +7,11 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const logger = new Logger('TesloShop');
   logger.log(`App running on port ${process.env.PORT}`)
-  logger.log(`App running on DB_HOST ${process.env.CUSTOM_DB_HOST}`)
-  logger.log(`App running on DB_NAMEE ${process.env.CUSTOM_DB_NAME}`)
-  logger.log(`App running on DB_USERNAMEE ${process.env.CUSTOM_DB_USER}`)
-  logger.log(`App running on DB_PORTT ${process.env.CUSTOM_DB_PORT}`)
-  logger.log(`App running on DB_PASSWORDD ${process.env.CUSTOM_DB_PASS}`)
+  logger.log(`App running on CUSTOM_DB_PASS ${process.env.CUSTOM_DB_HOST}`)
+  logger.log(`App running on CUSTOM_DB_NAME ${process.env.CUSTOM_DB_NAME}`)
+  logger.log(`App running on CUSTOM_DB_USER ${process.env.CUSTOM_DB_USER}`)
+  logger.log(`App running on CUSTOM_DB_PORT ${process.env.CUSTOM_DB_PORT}`)
+  logger.log(`App running on CUSTOM_DB_PASS ${process.env.CUSTOM_DB_PASS}`)
   const app = await NestFactory.create(AppModule);
   
 
