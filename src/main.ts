@@ -11,6 +11,9 @@ async function bootstrap() {
   logger.log(`App running on port ${process.env.PORT}`)
   logger.log(`App running on DATABASE_URL ${process.env.DATABASE_URL}`)
 
+  // Asegurar que dotenv carga el .env en Railway
+  dotenv.config({ path: '.env' });
+
   const app = await NestFactory.create(AppModule);
   
 
