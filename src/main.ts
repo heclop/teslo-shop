@@ -1,10 +1,12 @@
 import { NestFactory } from '@nestjs/core';
 import { Logger, ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import * as dotenv from 'dotenv';
 
 import { AppModule } from './app.module';
 
 async function bootstrap() {
+  dotenv.config();
   const logger = new Logger('TesloShop');
   logger.log(`App running on port ${process.env.PORT}`)
   logger.log(`App running on DATABASE_URL ${process.env.DATABASE_URL}`)
